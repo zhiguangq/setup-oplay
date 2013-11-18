@@ -10,7 +10,7 @@ InstType "Minimal"
 
 #!define QTDIR "D:\Qt\4.7.0"
 !define PRODUCT_NAME "oplay"
-!define PRODUCT_VERSION "1.0.0.5"
+!define PRODUCT_VERSION "1.0.0.6"
 Var INSTALL_DIR
 
 outfile "Setup${PRODUCT_NAME}_${PRODUCT_VERSION}.exe"
@@ -55,6 +55,7 @@ StrCpy $INSTALL_DIR $0
 setOutPath $INSTALL_DIR
 file oplay\avcodec-55.dll
 file oplay\avformat-55.dll
+file oplay\avresample-1.dll
 file oplay\avfilter-3.dll
 file oplay\avutil-52.dll
 file oplay\msvcp100d.dll
