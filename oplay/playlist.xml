@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="gb2312" ?>
+<archive>
+	<video>
+		<type>电视剧</type>
+		<name>1</name>
+		<pictureUrl></pictureUrl>
+		<url>http://127.0.0.1/m3u8/1200k/1200k.m3u8</url>
+	</video>
+	<video>
+		<type>电影</type>
+		<name>2</name>
+		<pictureUrl></pictureUrl>
+		<url>F:\movie\nas\1.ts</url>	
+	</video>
+	<video>
+		<type>电影</type>
+		<name>3</name>
+		<pictureUrl></pictureUrl>
+		<url>rtsp://admin:admin@192.168.3.45/mpeg4cif</url>
+	</video>
+	<video>
+		<type>电影</type>
+		<name>4</name>
+		<pictureUrl></pictureUrl>
+		<url>H:\\media\\test.ts</url>
+	</video>
+	<video>
+		<type>电影</type>
+		<name>5</name>
+		<pictureUrl></pictureUrl>
+		<url>rtsp://192.168.58.130:9081/test.sdp</url>
+	</video>
+	<video>
+		<type>电影</type>
+		<name>6</name>
+		<pictureUrl></pictureUrl>
+		<url>H:\\media\\record.mp4</url>
+	</video>
+</archive>
