@@ -11,6 +11,7 @@ InstType "Minimal"
 #!define QTDIR "D:\Qt\4.7.0"
 !define PRODUCT_NAME "oplay"
 !define PRODUCT_VERSION "1.0.0.6"
+Var SPACE_STR
 Var INSTALL_DIR
 
 outfile "Setup${PRODUCT_NAME}_${PRODUCT_VERSION}.exe"
@@ -52,6 +53,11 @@ section
 ReadRegStr $0 HKCU "Software\oplay" "installDirectory"
 StrCpy $INSTALL_DIR $0
 
+StrCpy $SPACE_STR " "
+WriteRegStr HKCR "oplay" "" "URL:oplay Protocol Handler"
+WriteRegStr HKCR "oplay" "URL Protocol" ""
+WriteRegStr HKCR "oplay\shell\open\command" "" $INSTALL_DIR\${PRODUCT_NAME}.exe$SPACE_STR"%0"
+
 setOutPath $INSTALL_DIR
 file oplay\avcodec-55.dll
 file oplay\avformat-55.dll
@@ -66,6 +72,7 @@ file oplay\pthreadgc2.dll
 file oplay\QtAVd1.dll
 file oplay\QtCored4.dll
 file oplay\QtGuid4.dll
+file oplay\QtNetworkd4.dll
 file oplay\QtOpenGLd4.dll
 file oplay\QtXmld4.dll
 file oplay\swresample-0.dll
