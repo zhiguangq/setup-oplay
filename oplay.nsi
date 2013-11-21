@@ -67,6 +67,7 @@ file oplay\avutil-52.dll
 file oplay\msvcp100d.dll
 file oplay\msvcr100d.dll
 file oplay\playlist.xml
+file oplay\oplay.html
 file oplay\portaudio_x86.dll
 file oplay\pthreadgc2.dll
 file oplay\QtAVd1.dll
