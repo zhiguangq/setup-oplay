@@ -10,7 +10,7 @@ InstType "Minimal"
 
 #!define QTDIR "D:\Qt\4.7.0"
 !define PRODUCT_NAME "oplay"
-!define PRODUCT_VERSION "1.0.0.6"
+!define PRODUCT_VERSION "1.0.0.9"
 Var SPACE_STR
 Var INSTALL_DIR
 
